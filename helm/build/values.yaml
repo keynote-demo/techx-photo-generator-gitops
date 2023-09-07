@@ -1,0 +1,15 @@
+app:
+  name: techx-photo-generator-app
+  namespace: techx
+  cluster: .apps.keynote.w6gk.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/keynote-demo/techx-photo-generator
+  org: keynote-demo
+  name: techx-photo-generator
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: techx/photo-generator-app
+  tag: latest
